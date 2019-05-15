@@ -4,7 +4,7 @@ panel iptvunion beta
 IPTV Panel: Ubuntu (64bit)
 
 
-Fresh installation
+Fresh installation:
 
 sudo apt install mysql-server
 
