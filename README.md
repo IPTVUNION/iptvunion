@@ -12,7 +12,10 @@ wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunion.sh &
 
 
 ###########################################################################################
+
 Bitcoin: 1EKwTkQnZvEKGVvR1J9tHzwUMZ2vXi9wJm
+
+Email: admin@iptvunion.tv
 
 Login: http://host:9821
 
