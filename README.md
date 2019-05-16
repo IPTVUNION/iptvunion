@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunion.sh &
 
 
 ###########################################################################################
-Visa / Master  Card : http://bit.ly/2JlWvD7 
+Visa / Master  Card : http://bit.ly/2JlWvD7  : 1kwd = 3.30usd
 
 Bitcoin: 1EKwTkQnZvEKGVvR1J9tHzwUMZ2vXi9wJm
 
