@@ -18,7 +18,6 @@ echo ""
 read -p "Please enter a password for your MySQL : " mysqlpassword
 (mysql -uroot -p$mysqlpassword -e "CREATE DATABASE iptvunion"  2> /dev/null);
 (mysql -uroot -p$mysqlpassword -e "CREATE DATABASE phpmyadmin"  2> /dev/null);
-
 echo -n "1. [password for your MySQL:] "
 echo -n " [############"
 RESULT=`mysqlshow --user=root --password=$mysqlpassword mysql | grep -v Wildcard | grep -o mysql `
