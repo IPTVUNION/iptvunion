@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 sudo apt install -y --force-yes lsb-core 
 clear
 sleep 1
