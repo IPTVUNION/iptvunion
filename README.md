@@ -33,3 +33,13 @@ Start Panel : service iptvunion start
 IMPORTANT: After you logged in, go to settings and check your host. 
 
 ###########################################################################################
+phpmyadmin
+
+Login: http://host:9821/phpmyadmin
+
+Username: admin
+
+Password: mysql password 
+
+
+###########################################################################################
