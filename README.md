@@ -37,7 +37,7 @@ phpmyadmin
 
 Login: http://host:9821/phpmyadmin
 
-Username: admin
+Username: root
 
 Password: mysql password 
 
