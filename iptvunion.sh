@@ -80,7 +80,7 @@ echo -n "#";
 echo -n "#";
 (/usr/sbin/useradd -s /sbin/nologin -U -d /home/iptvunion -m iptvunion 2> /dev/null);
 echo -n "#";
-(wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion > /dev/null 2>&1)
+(wget https://host/iptvunion.tar.gz -P /home/iptvunion > /dev/null 2>&1)
 (tar -zxvf /home/iptvunion/iptvunion.tar.gz -C /home/iptvunion/ > /dev/null 2>&1);
 echo -n "#";
 (rm -r  /home/iptvunion/iptvunion.tar.gz); 
