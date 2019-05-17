@@ -1,5 +1,5 @@
 # iptvunion
-panel iptvunion beta
+iptvunion beta panel
 
 IPTV Panel: Ubuntu (64bit)
 
