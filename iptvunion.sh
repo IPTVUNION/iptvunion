@@ -116,6 +116,8 @@ echo ""
 echo  "$(tput setaf 3)Stop  Panel : service iptvunion stop $(tput sgr0)"
 echo  "$(tput setaf 3)Start Panel : service iptvunion start $(tput sgr0)"
 echo  "$(tput setaf 1)IMPORTANT: After you logged in, go to settings and check your host. $(tput sgr0)   "
+echo ""
+echo  "$(tput setaf 1)Restarting server $(tput sgr0)   "
 echo "$(tput setaf 6)[+] ##################################################[+]$(tput sgr0)"
 echo ""
 else
