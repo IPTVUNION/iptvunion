@@ -12,6 +12,7 @@ wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunion.sh &
 
 wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunionWeb.sh && chmod a+x iptvunionWeb.sh && ./iptvunionWeb.sh
 
+[CODE]wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunionWeb.sh && chmod a+x iptvunionWeb.sh && ./iptvunionWeb.sh[/CODE]
 
 ###########################################################################################
 Visa / Master  Card : http://bit.ly/2JlWvD7   1KWD = 3.30USD
