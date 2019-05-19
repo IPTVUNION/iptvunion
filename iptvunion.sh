@@ -65,6 +65,7 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes libpq-dev > /dev/null 2>&1);
 echo -n "#";
+(apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y --force-yes nload > /dev/null 2>&1);
 echo -n "#";
