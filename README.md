@@ -14,7 +14,6 @@ wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunionWeb.s
 
 
 ###########################################################################################
-Visa / Master  Card : http://bit.ly/2JlWvD7   1KWD = 3.30USD
 
 Bitcoin: 1EKwTkQnZvEKGVvR1J9tHzwUMZ2vXi9wJm
 
