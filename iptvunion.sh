@@ -50,7 +50,8 @@ sleep 2
 ##############################################################################
 echo -n "4. [Installing needed files:] "
 echo -n " [#"
-(apt-get install -y --force-yes update > /dev/null 2>&1);
+(sudo apt-get update > /dev/null 2>&1);
+(apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
 (apt-get install -y --force-yes dist-upgrade > /dev/null 2>&1);
 echo -n "#";
@@ -72,7 +73,6 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes nload > /dev/null 2>&1);
 echo -n "#";
-(apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 2
 ##############################################################################
@@ -89,7 +89,7 @@ echo -n "#";
 (wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion > /dev/null 2>&1)
 (tar -zxvf /home/iptvunion/iptvunion.tar.gz -C /home/iptvunion/ > /dev/null 2>&1);
 echo -n "#";
-(rm -r  /home/iptvunion/iptvunion.tar.gz); 
+#(rm -r  /home/iptvunion/iptvunion.tar.gz); 
 echo -n "#";
 echo -n "#";
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
