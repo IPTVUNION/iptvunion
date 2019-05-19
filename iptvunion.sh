@@ -69,6 +69,7 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes nload > /dev/null 2>&1);
 echo -n "#";
+(apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 2
 ##############################################################################
