@@ -43,14 +43,16 @@ else
 echo -e "]$(tput setaf 1)Failed$(tput sgr0)"
 exit 3
 fi
-#if ! grep -q "deb http://mirrors.kernel.org/ubuntu/ xenial main" "$File"; then
-#echo 'deb http://mirrors.kernel.org/ubuntu/ xenial main' >> /etc/apt/sources.list
-#fi 
+if [ "$osrelease" == "18.04" ]; then 
+if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
+echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
+fi 
+fi 
 sleep 2
 ##############################################################################
 echo -n "4. [Installing needed files:] "
 echo -n " [#"
-(sudo apt-get update > /dev/null 2>&1);
+(sudo apt-get -y update > /dev/null 2>&1);
 (apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
 (apt-get install -y --force-yes dist-upgrade > /dev/null 2>&1);
