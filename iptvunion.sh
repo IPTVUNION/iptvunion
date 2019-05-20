@@ -43,9 +43,9 @@ else
 echo -e "]$(tput setaf 1)Failed$(tput sgr0)"
 exit 3
 fi
-if ! grep -q "deb http://mirrors.kernel.org/ubuntu/ xenial main" "$File"; then
-echo 'deb http://mirrors.kernel.org/ubuntu/ xenial main' >> /etc/apt/sources.list
-fi 
+#if ! grep -q "deb http://mirrors.kernel.org/ubuntu/ xenial main" "$File"; then
+#echo 'deb http://mirrors.kernel.org/ubuntu/ xenial main' >> /etc/apt/sources.list
+#fi 
 sleep 2
 ##############################################################################
 echo -n "4. [Installing needed files:] "
