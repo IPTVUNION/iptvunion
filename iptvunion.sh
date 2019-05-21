@@ -43,7 +43,7 @@ else
 echo -e "]$(tput setaf 1)Failed$(tput sgr0)"
 exit 3
 fi
-if [ "$osrelease" == "18.04" ] || [ "$osrelease" == "19.04" ] ; then 
+if [ "$osrelease" == "18.04" ] || [ "$osrelease" == "18.10" ]|| [ "$osrelease" == "19.04" ] ; then 
 if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
 echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
 fi
@@ -77,6 +77,15 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
 (apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
+
+if [ "$osrelease" == "19.04" ] ; then 
+( apt install -y alien elfutils > /dev/null 2>&1);
+( wget http://download-ib01.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/os/Packages/l/libpng12-1.2.57-8.fc29.x86_64.rpm  -P /root > /dev/null 2>&1);
+( sudo alien -cv *.rpm > /dev/null 2>&1);
+( sudo dpkg -i *.deb > /dev/null 2>&1);
+(  sudo ln -s /usr/lib64/libpng12.so.0 /usr/lib/x86_64-linux-gnu/libpng12.so.0 > /dev/null 2>&1);
+fi
+
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 2
 ##############################################################################
