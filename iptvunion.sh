@@ -52,7 +52,8 @@ sleep 2
 ##############################################################################
 echo -n "4. [Installing needed files:] "
 echo -n " [#"
-(sudo apt-get -y update > /dev/null 2>&1);
+(sudo apt -y update > /dev/null 2>&1);
+( apt-get install -y --force-yes libpq5   > /dev/null 2>&1);
 (apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
 (apt-get install -y --force-yes dist-upgrade > /dev/null 2>&1);
@@ -61,7 +62,6 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y libmcrypt-dev > /dev/null 2>&1);
 echo -n "#";
-(apt-get install -y --force-yes libmcrypt-dev > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y libjpeg8 > /dev/null 2>&1);
 echo -n "#";
