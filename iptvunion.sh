@@ -43,10 +43,13 @@ else
 echo -e "]$(tput setaf 1)Failed$(tput sgr0)"
 exit 3
 fi
-if [ "$osrelease" == "18.04" ] ||  [ "$osrelease" == "18.10" ]; then 
+if [ "$osrelease" == "18.04" ] ; then 
 if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
 echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
-fi 
+fi
+if [ "$osrelease" == "18.10" ]; then 
+if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
+echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
 fi 
 sleep 2
 ##############################################################################
@@ -75,6 +78,8 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes nload > /dev/null 2>&1);
 echo -n "#";
+(apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
+(apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 2
 ##############################################################################
