@@ -47,9 +47,6 @@ if [ "$osrelease" == "18.04" ] ; then
 if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
 echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
 fi
-if [ "$osrelease" == "18.10" ]; then 
-if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
-echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
 fi 
 sleep 2
 ##############################################################################
