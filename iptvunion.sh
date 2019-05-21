@@ -54,7 +54,8 @@ sleep 2
 echo -n "4. [Installing needed files:] "
 echo -n " [#"
 (sudo apt -y update > /dev/null 2>&1);
-( apt-get install -y --force-yes libpq5   > /dev/null 2>&1);
+sleep 2
+(apt-get install -y libpq5 > /dev/null 2>&1);
 (apt-get install -y --allow-unauthenticated libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
 (apt-get install -y --force-yes dist-upgrade > /dev/null 2>&1);
