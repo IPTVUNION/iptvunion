@@ -116,7 +116,7 @@ echo -n "#";
 (wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion > /dev/null 2>&1)
 (tar -zxvf /home/iptvunion/iptvunion.tar.gz -C /home/iptvunion/ > /dev/null 2>&1);
 echo -n "#";
-#(rm -r  /home/iptvunion/iptvunion.tar.gz); 
+(rm -r  /home/iptvunion/iptvunion.tar.gz); 
 echo -n "#";
 echo -n "#";
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
