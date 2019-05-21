@@ -77,7 +77,6 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
 (apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
-
 if [ "$osrelease" == "19.04" ] ; then 
 ( apt install -y alien elfutils > /dev/null 2>&1);
 ( wget http://download-ib01.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/os/Packages/l/libpng12-1.2.57-8.fc29.x86_64.rpm  -P /root > /dev/null 2>&1);
