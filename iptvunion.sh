@@ -1,8 +1,9 @@
 #!/bin/bash
 clear
+sleep 2
 sudo apt install -y --force-yes lsb-core 
 clear
-sleep 1
+sleep 2
 echo -e "$(tput setaf 6)Welcome to IPTVUnion Installation$(tput sgr0)"
 echo -e "$(tput setaf 5)www.iptvunion.tv$(tput sgr0)"
 sleep 3
