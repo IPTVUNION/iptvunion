@@ -55,9 +55,9 @@ echo -n "4. [Installing needed files:] "
 echo -n " [#"
 sleep 1
 (apt-get -y update > /dev/null 2>&1);
-sleep 2
+sleep 1
 (apt-get install -y libpq5 > /dev/null 2>&1);
-sleep 2
+sleep 1
 (apt-get install -y libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
 sleep 1
