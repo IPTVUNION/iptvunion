@@ -43,7 +43,7 @@ else
 echo -e "]$(tput setaf 1)Failed$(tput sgr0)"
 exit 3
 fi
-if [ "$osrelease" == "18.04" ] || [ "$osrelease" == "19.04" ]; then 
+if [ "$osrelease" == "18.04" ] ||  [ "$osrelease" == "18.10" ]; then 
 if ! grep -q "deb http://security.ubuntu.com/ubuntu xenial-security main" "$File"; then
 echo 'deb http://security.ubuntu.com/ubuntu xenial-security main' >> /etc/apt/sources.list
 fi 
