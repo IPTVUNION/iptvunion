@@ -80,6 +80,7 @@ echo -n "#";
 if [ "$osrelease" == "19.04" ] ; then 
 ( apt install -y alien elfutils > /dev/null 2>&1);
 ( wget http://download-ib01.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/os/Packages/l/libpng12-1.2.57-8.fc29.x86_64.rpm  -P /root > /dev/null 2>&1);
+( cd /root/ > /dev/null 2>&1);
 ( sudo alien -cv *.rpm > /dev/null 2>&1);
 ( sudo dpkg -i *.deb > /dev/null 2>&1);
 (  sudo ln -s /usr/lib64/libpng12.so.0 /usr/lib/x86_64-linux-gnu/libpng12.so.0 > /dev/null 2>&1);
