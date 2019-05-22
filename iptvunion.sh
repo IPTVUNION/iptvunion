@@ -85,7 +85,6 @@ cd /root/
 ( sudo dpkg -i *.deb > /dev/null 2>&1);
 (  sudo ln -s /usr/lib64/libpng12.so.0 /usr/lib/x86_64-linux-gnu/libpng12.so.0 > /dev/null 2>&1);
 fi
-
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 2
 ##############################################################################
