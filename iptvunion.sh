@@ -53,44 +53,30 @@ sleep 2
 ##############################################################################
 echo -n "4. [Installing needed files:] "
 echo -n " [#"
-sleep 1
 (apt-get -y update > /dev/null 2>&1);
-sleep 1
 (apt-get install -y libpq5 > /dev/null 2>&1);
-sleep 1
-(apt-get install -y libpng12-0 > /dev/null 2>&1);
 echo -n "#";  
-sleep 1
 (apt-get install -y --force-yes dist-upgrade > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libxslt1-dev git > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y libmcrypt-dev > /dev/null 2>&1);
 echo -n "#";
+(apt-get install -y libpng12-0 > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y libjpeg8 > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libcurl4-openssl-dev > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libssh2-1-dev > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libpq-dev > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
 echo -n "#";
-sleep 1
-(apt-get install -y --force-yes nload > /dev/null 2>&1);
+(apt-get install -y --force-yes iftop > /dev/null 2>&1);
 echo -n "#";
-sleep 1
 (apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
-sleep 1
 if [ "$osrelease" == "19.04" ] ; then 
 ( apt install -y alien elfutils > /dev/null 2>&1);
 ( wget http://download-ib01.fedoraproject.org/pub/fedora/linux/releases/29/Everything/x86_64/os/Packages/l/libpng12-1.2.57-8.fc29.x86_64.rpm  -P /root > /dev/null 2>&1);
