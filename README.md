@@ -13,6 +13,8 @@ Installation options:
 
     wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunion.sh && chmod a+x iptvunion.sh && ./iptvunion.sh
 
+
+Update: 
     wget https://raw.githubusercontent.com/IPTVUNION/iptvunion/master/iptvunionWeb.sh && chmod a+x iptvunionWeb.sh && ./iptvunionWeb.sh
 
 
