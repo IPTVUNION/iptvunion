@@ -139,10 +139,12 @@ echo "$(tput setaf 6)[+] ##################################################[+]$(
 echo ""
 echo ""
 echo -e "\e[1;31mReboot now \e[0m" 
-read -p "(y/n)?" CONT
+
+read -p "(y/n)?" CON
 if [ "$CONT" == "y" ] ; then
 reboot
 fi     
+
 else
 echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
 sleep 5
