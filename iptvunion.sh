@@ -108,6 +108,7 @@ echo -n "#";
 echo -n "#";
 (rm -r  /home/iptvunion/iptvunion.tar.gz); 
 echo -n "#";
+(sudo chmod  -R  777 /home/iptvunion/www/* 2> /dev/null);
 echo -n "#";
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
 echo -n "#";
