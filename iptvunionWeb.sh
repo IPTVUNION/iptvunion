@@ -9,9 +9,9 @@ echo -n " [############"
 RESULT=`mysqlshow --user=root --password=$mysqlpassword mysql | grep -v Wildcard | grep -o mysql `
 if [ "$RESULT" == "mysql" ]; then 
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
-sleep 1
-rm -r /home/iptvunion/*
-sleep 1
+sleep 3
+ rm -r /home/iptvunion/*
+sleep 3
 wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion 
 (tar -zxvf /home/iptvunion/iptvunion.tar.gz -C /home/iptvunion/ > /dev/null 2>&1);
 sleep 1
