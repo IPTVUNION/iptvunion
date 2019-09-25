@@ -1,15 +1,12 @@
 #!/bin/bash
-mv /home/iptvunion/www/controllers/config.php  /home/iptvunion/config.php 
+rm -r /home/iptvunion/*
 sleep 1
-rm -r /home/iptvunion/www/*
+wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion 
+(tar -zxvf /home/iptvunion/iptvunion.tar.gz -C /home/iptvunion/ > /dev/null 2>&1);
 sleep 1
-cd /home/iptvunion/www/
+(rm -r  /home/iptvunion/iptvunion.tar.gz); 
 sleep 1
-wget https://github.com/IPTVUNION/iptvunion/raw/master/web.tar.gz
-sleep 1
-tar -xvzf web.tar.gz
-sleep 1
-rm -r web.tar.gz
-sleep 1
-mv /home/iptvunion/config.php /home/iptvunion/www/controllers/config.php
+(rm -r  /home/iptvunion/iptvunion.sql); 
+(rm -r  /home/iptvunion/phpmyadmin.sql);
+(rm -r  /home/iptvunion/www/info.php 2> /dev/null);
 exit 3
