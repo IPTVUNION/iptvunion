@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 sleep 4
 read -p "Please enter a password for your MySQL : " mysqlpassword
 (mysql -uroot -p$mysqlpassword -e "CREATE DATABASE iptvunion"  2> /dev/null);
@@ -22,7 +23,8 @@ sleep 1
 (rm -r  /home/iptvunion/iptvunion);
 sleep 1
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
-sleep 1
+sleep 3
+service iptvunion restart
 else
 echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
 sleep 5
