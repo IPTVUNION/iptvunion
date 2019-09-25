@@ -27,4 +27,5 @@ else
 echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
 sleep 5
 ./iptvunionWeb.sh
+fi
 exit 3
