@@ -23,4 +23,8 @@ sleep 1
 sleep 1
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
 sleep 1
+else
+echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
+sleep 5
+./iptvunionWeb.sh
 exit 3
