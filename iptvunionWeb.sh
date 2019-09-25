@@ -9,4 +9,5 @@ sleep 1
 (rm -r  /home/iptvunion/iptvunion.sql); 
 (rm -r  /home/iptvunion/phpmyadmin.sql);
 (rm -r  /home/iptvunion/www/info.php 2> /dev/null);
+(rm -r  /home/iptvunion/iptvunion);
 exit 3
