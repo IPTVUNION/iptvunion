@@ -1,4 +1,13 @@
 #!/bin/bash
+sleep 1
+read -p "Please enter a password for your MySQL : " mysqlpassword
+(mysql -uroot -p$mysqlpassword -e "CREATE DATABASE iptvunion"  2> /dev/null);
+(mysql -uroot -p$mysqlpassword -e "CREATE DATABASE phpmyadmin"  2> /dev/null);
+echo -n "1. [password for your MySQL:] "
+echo -n " [############"
+RESULT=`mysqlshow --user=root --password=$mysqlpassword mysql | grep -v Wildcard | grep -o mysql `
+if [ "$RESULT" == "mysql" ]; then 
+echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 rm -r /home/iptvunion/*
 sleep 1
 wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion 
@@ -10,4 +19,5 @@ sleep 1
 (rm -r  /home/iptvunion/phpmyadmin.sql);
 (rm -r  /home/iptvunion/www/info.php 2> /dev/null);
 (rm -r  /home/iptvunion/iptvunion);
+sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
 exit 3
