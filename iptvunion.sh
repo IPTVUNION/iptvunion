@@ -124,7 +124,9 @@ echo -n "#";
 ( update-rc.d iptvunion defaults > /dev/null 2>&1 )
 echo -n "#";
 (rm -r  /home/iptvunion/iptvunion.sql); 
-(rm -r  /home/iptvunion/phpmyadmin.sql); 
+(rm -r  /home/iptvunion/phpmyadmin.sql);
+(rm -r  /home/iptvunion/www/info.php 2> /dev/null);
+
 echo -n "#";
 (service iptvunion restart > /dev/null 2>&1 );
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
