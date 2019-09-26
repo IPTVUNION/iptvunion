@@ -64,6 +64,8 @@ echo -n "#";
 echo -n "#";
 (apt-get install -y libpng12-0 > /dev/null 2>&1);
 (apt-get install -y libjpeg8 > /dev/null 2>&1);
+(apt-get install -y libwebsockets-dev > /dev/null 2>&1);
+(apt-get install -y mosquitto > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y  build-essential nano > /dev/null 2>&1);
 ( apt-get install  -y libfcgi-dev libfcgi0ldbl libjpeg-turbo8-dbg  libssl-dev libc-client2007e > /dev/null 2>&1);
@@ -126,7 +128,6 @@ echo -n "#";
 (rm -r  /home/iptvunion/iptvunion.sql); 
 (rm -r  /home/iptvunion/phpmyadmin.sql);
 (rm -r  /home/iptvunion/www/info.php 2> /dev/null);
-
 echo -n "#";
 (service iptvunion restart > /dev/null 2>&1 );
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
