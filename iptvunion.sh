@@ -150,9 +150,12 @@ echo  "$(tput setaf 1)IMPORTANT: After you logged in, go to settings and check y
 echo ""
 echo  "$(tput setaf 1)Restarting server $(tput sgr0)   "
 echo "$(tput setaf 6)[+] ##################################################[+]$(tput sgr0)"
-echo ""
-echo ""
+sleep 5
 echo -e "\e[1;31mReboot now \e[0m" 
+read -p "$(tput setaf 1)Reboot now (y/n)?$(tput sgr0) " CONT
+if [ "$CONT" == "y" ] || [ "$CONT" == "Y" ]; then
+reboot
+fi
 else
 echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
 sleep 5
