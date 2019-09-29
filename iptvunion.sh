@@ -161,4 +161,4 @@ echo -e "]$(tput setaf 1)The Password is incorrect$(tput sgr0)"
 sleep 5
 ./iptvunion.sh
 fi
-exit 3
+exit 4
