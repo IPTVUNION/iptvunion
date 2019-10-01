@@ -84,6 +84,7 @@ echo -n "#";
 (apt-get install -y --force-yes iftop > /dev/null 2>&1);
 (apt-get install -y --force-yes libltdl7 > /dev/null 2>&1);
 (apt-get install -y --force-yes libgeoip-dev > /dev/null 2>&1);
+(apt-get install -y --force-yes lsb-release nscd curl > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
 if [ "$osrelease" == "19.04" ] ; then 
