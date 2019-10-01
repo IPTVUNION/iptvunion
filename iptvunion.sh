@@ -68,8 +68,11 @@ echo -n "#";
 (apt-get install -y mosquitto > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y  build-essential nano > /dev/null 2>&1);
+sleep 2
 ( apt-get install  -y libfcgi-dev libfcgi0ldbl libjpeg-turbo8-dbg  libssl-dev libc-client2007e > /dev/null 2>&1);
+sleep 1
 ( apt-get install  -y libc-client2007e-dev libxml2-dev libbz2-dev libjpeg-dev libpng12-dev libfreetype6-dev  > /dev/null 2>&1);
+sleep 1
 ( apt-get install  -y libkrb5-dev libxml2-dev libxslt1-dev  > /dev/null 2>&1);
 ( ln -s /usr/lib/libc-client.a /usr/lib/x86_64-linux-gnu/libc-client.a > /dev/null 2>&1);
 echo -n "#";
@@ -82,8 +85,10 @@ echo -n "#";
 (apt-get install -y --force-yes libcurl3 > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y --force-yes iftop > /dev/null 2>&1);
+sleep 1
 (apt-get install -y --force-yes libltdl7 > /dev/null 2>&1);
 (apt-get install -y --force-yes libgeoip-dev > /dev/null 2>&1);
+sleep 1
 (apt-get install -y --force-yes lsb-release nscd curl > /dev/null 2>&1);
 echo -n "#";
 (apt-get install -y --force-yes libgconf-2-4 > /dev/null 2>&1);
