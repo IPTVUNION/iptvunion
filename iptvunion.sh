@@ -127,7 +127,7 @@ echo -n "#";
 ( chmod 755 /home/iptvunion/phpmyadmin/config.inc.php /dev/null 2>&1 )
 sed --in-place '/exit 0/d' /etc/rc.local 
 echo "sleep 2" >> /etc/rc.local
-echo "service iptvunion restart" >> /etc/rc.local
+echo "sudo /etc/init.d/iptvunion restart" >> /etc/rc.local
 echo "exit 0" >> /etc/rc.local
 echo -n "#";
 (service iptvunion restart > /dev/null 2>&1 );
