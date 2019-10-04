@@ -10,6 +10,8 @@ RESULT=`mysqlshow --user=root --password=$mysqlpassword mysql | grep -v Wildcard
 if [ "$RESULT" == "mysql" ]; then 
 echo -e "]$(tput setaf 2)Successful$(tput sgr0)"
 sleep 3
+sudo /etc/init.d/iptvunion stop
+sleep 3
  rm -r /home/iptvunion/*
 sleep 3
 wget https://sourceforge.net/projects/iptvunion/files/iptvunion.tar.gz -P /home/iptvunion 
