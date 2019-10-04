@@ -23,7 +23,6 @@ sleep 1
 (rm -r  /home/iptvunion/phpmyadmin.sql);
 (rm -r  /home/iptvunion/www/info.php 2> /dev/null);
 (rm -r  /home/iptvunion/iptvunion);
-(rm -r  /home/iptvunion/iptvunion.tar.gz);
 sleep 1
 sed -i 's/xxx/'$mysqlpassword'/g' /home/iptvunion/www/controllers/config.php 
 sleep 3
