@@ -1,7 +1,7 @@
 # iptvunion
 iptvunion beta panel
 
-www.iptvunion.tv
+www.iptvunion.com
 
 <img src="https://github.com/IPTVUNION/iptvunion/raw/master/panel.jpg">
 
@@ -25,7 +25,7 @@ Update:
 
 Bitcoin: 1EKwTkQnZvEKGVvR1J9tHzwUMZ2vXi9wJm
 
-Email: admin@iptvunion.tv
+Email: admin@iptvunion.com
 
 ###########################################################################################
 
